@@ -249,8 +249,8 @@ const static   boost::uuids::uuid CRYPTONOTE_NETWORK         =
 };
 
 const char* const SEED_NODES[] = {
-  "35.182.187.63:11126",//Bytechcoin-Seed1
-  "52.60.230.210:11126", //Bytechcoin-Seed1
+  "178.32.178.27:11126", //YetkinSeed1
+  "37.148.210.136:11126", //NatroSeed2
   "107.21.85.206:11126", //AWS-Seed3
 };
 } // CryptoNote
