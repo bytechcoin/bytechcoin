@@ -1,4 +1,4 @@
-![image](https://github.com/bytechcoin/bytechcoin/blob/development/.github/ISSUE_TEMPLATE/bytechcoin_git.png)
+![image](https://github.com/bytechcoin/bytechcoin/blob/master/.github/ISSUE_TEMPLATE/bytechcoin_git.png)
 
 ### How To Compile
 
