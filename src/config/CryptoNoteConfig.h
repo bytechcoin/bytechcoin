@@ -38,8 +38,8 @@ const size_t   ZAWY_DIFFICULTY_V2                            = 0;
 const uint8_t  ZAWY_DIFFICULTY_DIFFICULTY_BLOCK_VERSION      = 3;
 
 const uint64_t LWMA_2_DIFFICULTY_BLOCK_INDEX                 = 1;
-const uint64_t LWMA_2_DIFFICULTY_BLOCK_INDEX_V2              = 100;
-const uint64_t LWMA_2_DIFFICULTY_BLOCK_INDEX_V3              = 30000;
+const uint64_t LWMA_2_DIFFICULTY_BLOCK_INDEX_V2              = 2;
+const uint64_t LWMA_2_DIFFICULTY_BLOCK_INDEX_V3              = 3;
 
 const uint64_t LWMA_3_DIFFICULTY_BLOCK_INDEX                 = 1200000;
 
@@ -151,7 +151,7 @@ const uint32_t KEY_IMAGE_CHECKING_BLOCK_INDEX                = 0;
 
 const uint32_t UPGRADE_HEIGHT_V2                             = 1;
 const uint32_t UPGRADE_HEIGHT_V3                             = 2;
-const uint32_t UPGRADE_HEIGHT_V4                             = 55000; // Upgrade height for CN-Lite Variant 1 switch.
+const uint32_t UPGRADE_HEIGHT_V4                             = 350000; // Upgrade height for CN-Lite Variant 1 switch.
 const uint32_t UPGRADE_HEIGHT_CURRENT                        = UPGRADE_HEIGHT_V4;
 
 const unsigned UPGRADE_VOTING_THRESHOLD                      = 90;               // percent
@@ -168,7 +168,7 @@ const uint64_t FORK_HEIGHTS[] =
 };
 
 /* MAKE SURE TO UPDATE THIS VALUE WITH EVERY MAJOR RELEASE BEFORE A FORK */
-const uint64_t SOFTWARE_SUPPORTED_FORK_INDEX                 = 1;
+const uint64_t SOFTWARE_SUPPORTED_FORK_INDEX                 = 0;
 
 const uint64_t FORK_HEIGHTS_SIZE = sizeof(FORK_HEIGHTS) / sizeof(*FORK_HEIGHTS);
 
