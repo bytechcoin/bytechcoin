@@ -37,7 +37,7 @@ namespace WalletConfig
     const std::string coinName = std::string(CryptoNote::CRYPTONOTE_NAME);
 
     /* Where can your users contact you for support? E.g. discord */
-    const std::string contactLink = "http://chat.bytechcoin.com";
+    const std::string contactLink = "https://discordapp.com/invite/4BBg8q";
 
 
     /* The number of decimals your coin has */
