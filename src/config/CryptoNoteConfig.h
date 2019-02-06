@@ -69,7 +69,7 @@ BytechCoind --print-genesis-tx --genesis-block-reward-address bYTCv3BDuQcUYzJXVY
 * You should see your premine appear in the previously generated wallet.
 
 */
-const char     GENESIS_COINBASE_TX_HEX[]                     = "010a01ff000183b1de16029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121016850be5951d22916b3ccc0d1769041e9216c75b0ed822c19451e04a452911d41";
+const char     GENESIS_COINBASE_TX_HEX[]                     = "010a01ff000183b1de16029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101fa044413567683e4446c3de55702e9ed48942d27fc9c8d5edfd2771778a016dc";
 static_assert(sizeof(GENESIS_COINBASE_TX_HEX)/sizeof(*GENESIS_COINBASE_TX_HEX) != 1, "GENESIS_COINBASE_TX_HEX must not be empty.");
 
 /* This is the unix timestamp of the first "mined" block (technically block 2, not the genesis block)
