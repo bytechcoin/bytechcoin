@@ -69,7 +69,7 @@ BytechCoind --print-genesis-tx --genesis-block-reward-address bYTCv3BDuQcUYzJXVY
 * You should see your premine appear in the previously generated wallet.
 
 */
-const char     GENESIS_COINBASE_TX_HEX[]                     = "010a01ff000183b1de16029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd088071210176c08eb2f50bc9f2a3982a5e650ae4b4d4ffb18b75815a958d97074d34ee9bcf";
+const char     GENESIS_COINBASE_TX_HEX[]                     = "010a01ff000183b1de16029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121016850be5951d22916b3ccc0d1769041e9216c75b0ed822c19451e04a452911d41";
 static_assert(sizeof(GENESIS_COINBASE_TX_HEX)/sizeof(*GENESIS_COINBASE_TX_HEX) != 1, "GENESIS_COINBASE_TX_HEX must not be empty.");
 
 /* This is the unix timestamp of the first "mined" block (technically block 2, not the genesis block)
@@ -151,7 +151,7 @@ const uint32_t KEY_IMAGE_CHECKING_BLOCK_INDEX                = 0;
 
 const uint32_t UPGRADE_HEIGHT_V2                             = 1;
 const uint32_t UPGRADE_HEIGHT_V3                             = 2;
-const uint32_t UPGRADE_HEIGHT_V4                             = 350000; // Upgrade height for CN-Lite Variant 1 switch.
+const uint32_t UPGRADE_HEIGHT_V4                             = 1000; // Upgrade height for CN-Lite Variant 1 switch.
 const uint32_t UPGRADE_HEIGHT_CURRENT                        = UPGRADE_HEIGHT_V4;
 
 const unsigned UPGRADE_VOTING_THRESHOLD                      = 90;               // percent
