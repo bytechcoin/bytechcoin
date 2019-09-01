@@ -1,0 +1,56 @@
+Checking whether the ASM compiler is GNU using "--version" did not match "(GNU assembler)|(GCC)|(Free Software Foundation)":
+clang version 6.0.1-11 (tags/RELEASE_601/final)
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/togayyilmaz/Desktop/bytechcoin-0.14/build/rocksdb/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ddeb2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ddeb2.dir/build.make CMakeFiles/cmTC_ddeb2.dir/build
+make[1]: Entering directory '/home/togayyilmaz/Desktop/bytechcoin-0.14/build/rocksdb/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ddeb2.dir/CheckSymbolExists.c.o
+/usr/bin/clang-6.0    -o CMakeFiles/cmTC_ddeb2.dir/CheckSymbolExists.c.o   -c /home/togayyilmaz/Desktop/bytechcoin-0.14/build/rocksdb/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_ddeb2
+/usr/local/lib/python2.7/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ddeb2.dir/link.txt --verbose=1
+/usr/bin/clang-6.0      -rdynamic CMakeFiles/cmTC_ddeb2.dir/CheckSymbolExists.c.o  -o cmTC_ddeb2 
+/usr/bin/ld: CMakeFiles/cmTC_ddeb2.dir/CheckSymbolExists.c.o: in function `main':
+CheckSymbolExists.c:(.text+0x19): undefined reference to `pthread_create'
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_ddeb2.dir/build.make:87: cmTC_ddeb2] Error 1
+make[1]: Leaving directory '/home/togayyilmaz/Desktop/bytechcoin-0.14/build/rocksdb/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_ddeb2/fast] Error 2
+
+File /home/togayyilmaz/Desktop/bytechcoin-0.14/build/rocksdb/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/togayyilmaz/Desktop/bytechcoin-0.14/build/rocksdb/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cf407/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cf407.dir/build.make CMakeFiles/cmTC_cf407.dir/build
+make[1]: Entering directory '/home/togayyilmaz/Desktop/bytechcoin-0.14/build/rocksdb/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cf407.dir/CheckFunctionExists.c.o
+/usr/bin/clang-6.0   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_cf407.dir/CheckFunctionExists.c.o   -c /usr/local/lib/python2.7/dist-packages/cmake/data/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_cf407
+/usr/local/lib/python2.7/dist-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cf407.dir/link.txt --verbose=1
+/usr/bin/clang-6.0  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_cf407.dir/CheckFunctionExists.c.o  -o cmTC_cf407 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [CMakeFiles/cmTC_cf407.dir/build.make:87: cmTC_cf407] Error 1
+make[1]: Leaving directory '/home/togayyilmaz/Desktop/bytechcoin-0.14/build/rocksdb/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_cf407/fast] Error 2
+
+
