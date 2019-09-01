@@ -1,2 +1,0 @@
-/usr/bin/ar qc libUtilities.a  CMakeFiles/Utilities.dir/Utilities/Addresses.cpp.o CMakeFiles/Utilities.dir/Utilities/FormatTools.cpp.o CMakeFiles/Utilities.dir/Utilities/Input.cpp.o CMakeFiles/Utilities.dir/Utilities/Mixins.cpp.o CMakeFiles/Utilities.dir/Utilities/String.cpp.o CMakeFiles/Utilities.dir/Utilities/Utilities.cpp.o
-/usr/bin/ranlib libUtilities.a
